@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 jobs:
   build-and-test:
     macos:
@@ -8,7 +8,6 @@ jobs:
       FL_OUTPUT_DIR: output
       FASTLANE_LANE: test
     shell: /bin/bash --login -o pipefail
-    parallelism: 2
     steps:
       - checkout
       - run: bundle install
